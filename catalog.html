@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Catalog — The Reading Room</title>
+<meta name="description" content="Search our full book catalog and see what's currently available to borrow.">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="index.html"><span class="mark">R</span> The Reading Room</a>
+    <nav class="main-nav" aria-label="Main">
+      <a href="index.html">Home</a>
+      <a href="catalog.html" aria-current="page">Catalog</a>
+      <a href="agenda.html">Agenda</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="page-hero">
+    <div class="wrap">
+      <span class="eyebrow">the card catalog</span>
+      <h1>Full catalog</h1>
+      <p>Search and browse everything we hold, powered by
+      <a href="https://www.librarycat.org" target="_blank" rel="noopener">TinyCat</a>. Anyone can search and
+      see what's available here — no login needed. Borrowing history and patron details stay private to our
+      volunteer team, who manage checkouts on the admin side. Looking for something we don't have? Try
+      <a href="https://www.worldcat.org" target="_blank" rel="noopener">WorldCat</a> or
+      <a href="https://openlibrary.org" target="_blank" rel="noopener">Open Library</a> to see who else holds it.</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <div class="status-note">
+        <strong>Setup note for whoever maintains this page:</strong> replace <code>YOUR_LIBRARY_ID</code> in the
+        iframe <code>src</code> below with your TinyCat library ID (the part after <code>/lib/</code> in your
+        TinyCat homepage URL, e.g. <code>librarycat.org/lib/YOUR_LIBRARY_ID</code>). Everything else — adding
+        books, checking items in/out, editing records — happens on TinyCat itself; nothing here needs updating
+        when the catalog changes.
+      </div>
+
+      <div class="agenda-embed">
+        <iframe
+          src="https://www.librarycat.org/lib/YOUR_LIBRARY_ID"
+          title="The Reading Room — catalog on TinyCat"
+          loading="lazy">
+        </iframe>
+      </div>
+
+      <p style="margin-top:18px;">
+        <a class="btn alt" href="https://www.librarycat.org/lib/YOUR_LIBRARY_ID" target="_blank" rel="noopener">
+          Open catalog in a new tab ↗
+        </a>
+      </p>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap footer-grid">
+    <div><strong>The Reading Room</strong><br>A volunteer-run feminist library.</div>
+    <div><a href="index.html">Home</a><br><a href="agenda.html">Agenda</a><br><a href="contact.html">Contact</a></div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
