@@ -129,18 +129,16 @@ nav.main-nav a:hover, nav.main-nav a[aria-current="page"]{
 .btn.ghost{ background:transparent; color:var(--ink); }
 
 /* ---------- Hero / rotating banner ---------- */
-.hero{ padding:48px 0 32px; }
 .hero-grid{
-  display:grid; grid-template-columns: 1.05fr .95fr; gap:36px; align-items:center;
+  display:grid; grid-template-columns: 1fr; gap:36px;
 }
-@media (max-width:860px){ .hero-grid{ grid-template-columns:1fr; } }
 
 .banner{
   position:relative;
   border:3px solid var(--ink);
   background:var(--card);
   box-shadow:8px 8px 0 var(--violet);
-  aspect-ratio: 4/3;
+  aspect-ratio: 21/9;
   overflow:hidden;
 }
 .banner .slide{
